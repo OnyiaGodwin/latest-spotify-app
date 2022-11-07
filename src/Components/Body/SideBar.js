@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import classes from "./SideBar.module.css";
 import SideBarOptions from "./SideBarOptions";
@@ -7,12 +7,12 @@ import { useStateValue } from "../../store/StateProvider";
 import HomeIcon from "@mui/icons-material/Home";
 import AddBoxIcon from "@mui/icons-material/AddBox";
 import SearchIcon from "@mui/icons-material/Search";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+//import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import LibraryMusicIcon from "@mui/icons-material/LibraryMusic";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 
 function SideBar() {
-  const [{ playlists }, dispatch] = useStateValue();
+  const [{ playlists }, ] = useStateValue();
   
   return (
     <div className={classes.sidebar}>
@@ -27,7 +27,7 @@ function SideBar() {
       <SideBarOptions title="Your Library" Icon={LibraryMusicIcon} />
       <br />
       <SideBarOptions title="Create Playlist" Icon={AddBoxIcon} />
-      <SideBarOptions title="Liked Songs" Icon={FavoriteBorderIcon} />
+      <SideBarOptions title="Liked Songs" Icon={FavoriteIcon} />
       <hr />
 
       {playlists?.items?.map((playlist) => (

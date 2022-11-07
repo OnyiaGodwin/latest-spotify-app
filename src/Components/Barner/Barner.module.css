@@ -65,6 +65,18 @@
   background-color: rgb(200, 8, 32);
   width: 1118px;
   padding-right: 50px;
+  animation: fadeInAnimation ease 7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
 }
 
 .barner__greeting {
@@ -189,7 +201,6 @@
   );
   padding-left: 25px;
   padding-right: 25px;
-  margin-top: -45px;
   color: var(--text-base, #000000);
 }
 
