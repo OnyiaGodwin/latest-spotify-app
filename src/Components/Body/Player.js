@@ -1,8 +1,10 @@
 import React from 'react';
+
 import Body from './Body';
 import Footer from '../Footer/Footer';
-import classes from './Player.module.css'
 import SideBar from './SideBar';
+
+import classes from './Player.module.css';
 
 function Player(props) {
   const { spotify } = props;

@@ -1,13 +1,12 @@
 import React, { useEffect } from "react";
 
-import Player from "./components/Body/Player";
-import Login from "./components/Login/Login";
+import Player from "./Components/Body/Player";
+import Login from "./Components/Login/Login";
 import { useStateValue } from "./store/StateProvider";
 import { getTokenFromUrl } from "./spotify";
 
 
 import SpotifyWebApi from "spotify-web-api-js";
-import Header from "./components/Header/Header";
 
 
 const spotify = new SpotifyWebApi();
@@ -45,12 +44,20 @@ function App() {
         })
       })
 
-      spotify.getPlaylist('37i9dQZF1E4yriDVhjulaF').then((track) => {
+      spotify.getPlaylist('37i9dQZEVXcJZyENOWUFo7').then((response) => {
         dispatch({
-          type: "SET_CURRENT_PLAYLISTS",
-          currentPlaylists: track,
+          type: "SET_DISCOVER_PLAYLISTS",
+          discover_weekly: response,
         })
-      })
+      });
+
+      spotify.getMyTopArtists().then((artists) => {
+        dispatch({
+          type: "SET_TOP_TRACKS",
+          topArtists: artists,
+        })
+      });
+
     }
   }, [dispatch, token]);
 

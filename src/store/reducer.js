@@ -33,11 +33,17 @@ const reducer = (state, action) => {
         playlists: action.playlists,
       };
     
-      case "SET_CURRENT_PLAYLISTS":
+      case "SET_DISCOVER_PLAYLISTS":
         return {
           ...state,
-          currentPlaylists: action.currentPlaylists,
-        };
+          discover_weekly: action.discover_weekly,
+        }
+
+      case "SET_TOP_TRACKS":
+        return {
+          ...state,
+          topArtists: action.topArtists,
+        }
 
     default:
       return state;
