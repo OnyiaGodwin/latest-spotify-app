@@ -1,7 +1,8 @@
 .body {
-    padding: 30px;
-    flex: 0.8;
-    height: 100vh;
-    color: white;
-    background-color: rgb(18, 18, 18);
-} 
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  flex: 0.8;
+  color: white;
+  background-color: rgb(18, 18, 18);
+}

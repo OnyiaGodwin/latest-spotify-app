@@ -11,7 +11,7 @@ import PlaylistPlayIcon from "@mui/icons-material/PlaylistPlay";
 import VolumeDownIcon from "@mui/icons-material/VolumeDown";
 import Grid from "@mui/material/Grid";
 import Slider from "@mui/material/Slider";
-import FavoriteIcon from "@mui/icons-material/Favorite";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import PictureInPictureAltIcon from "@mui/icons-material/PictureInPictureAlt";
 import OfflineShareIcon from "@mui/icons-material/OfflineShare";
 import MicExternalOnIcon from "@mui/icons-material/MicExternalOn";
@@ -33,7 +33,7 @@ function Footer() {
         </div>
 
         <span className={classes.footer__icons}>
-          <FavoriteIcon className={classes.footer__left__favoriteIcon} />
+          <FavoriteBorderIcon className={classes.footer__left__favoriteIcon} />
           <PictureInPictureAltIcon
             className={classes.footer__left__pictureIcon}
           />
@@ -67,11 +67,11 @@ function Footer() {
               <VolumeDownIcon />
             </Grid>
             <Grid item xs>
-              <Slider />
+              <Slider className={classes.footer__slider} />
             </Grid>
           </Grid>
         }
-      </div>
+      </div> 
     </div>
   );
 }

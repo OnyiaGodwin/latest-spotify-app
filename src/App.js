@@ -5,6 +5,8 @@ import Login from "./Components/Login/Login";
 import { useStateValue } from "./store/StateProvider";
 import { getTokenFromUrl } from "./spotify";
 
+import classes from './App.module.css';
+
 
 import SpotifyWebApi from "spotify-web-api-js";
 
@@ -46,14 +48,14 @@ function App() {
 
       spotify.getPlaylist('37i9dQZEVXcJZyENOWUFo7').then((response) => {
         dispatch({
-          type: "SET_DISCOVER_PLAYLISTS",
+          type: "SET_DISCOVER_WEEKLY",
           discover_weekly: response,
         })
       });
 
       spotify.getMyTopArtists().then((artists) => {
         dispatch({
-          type: "SET_TOP_TRACKS",
+          type: "SET_TOP_ARTISTS",
           topArtists: artists,
         })
       });
@@ -64,7 +66,7 @@ function App() {
   console.log('The user is:', user); 
 
   return (
-    <div>
+    <div className={classes.app}>
       {token ? (<Player spotify={spotify} />) : (<Login />)}
       {/* <p>Dont worry, we go make am in this project, Amen!</p> */}
 

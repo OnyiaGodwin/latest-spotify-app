@@ -1,0 +1,147 @@
+.allPlaylist {
+  display: grid;
+  gap: 0px;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  gap: 30px;
+  background-color: rgb(18, 18, 18);
+  margin-left: -10px;
+}
+
+.allPlaylist__mainContainer {
+  color: #b3b3b3;
+  text-transform: none;
+  line-height: 1.6;
+  font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl,
+    CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif),
+    sans-serif;
+  direction: inherit;
+  visibility: visible;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  min-height: var(--shelf-min-height);
+  min-width: 100%;
+  position: relative;
+  left: 0;
+  top: 225px;
+}
+
+.allPlaylist__title__container {
+  color: #b3b3b3;
+  text-transform: none;
+  line-height: 1.6;
+  font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl,
+    CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif),
+    sans-serif;
+  direction: inherit;
+  visibility: visible;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.allPlaylist__title__container__left {
+  color: #b3b3b3;
+  text-transform: none;
+  font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl,
+    CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif),
+    sans-serif;
+  direction: inherit;
+  visibility: visible;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: block;
+  flex-grow: 1;
+  line-height: normal;
+  min-width: 0;
+}
+
+.allPlaylist__title__container__left > h2 {
+  text-transform: none;
+  direction: inherit;
+  visibility: visible;
+  line-height: normal;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  margin-block: 0px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: var(
+    --font-family,
+    CircularSpTitle,
+    CircularSpTitle-Tall,
+    CircularSp-Arab,
+    CircularSp-Hebr,
+    CircularSp-Cyrl,
+    CircularSp-Grek,
+    CircularSp-Deva,
+    var(--fallback-fonts, sans-serif)
+  );
+  color: var(--text-base, #000000);
+  width: fit-content;
+  margin-bottom: 30px;
+}
+
+.allPlaylist__title__container__left > h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.allPlaylist__title__container > button {
+  color: #b3b3b3;
+  text-transform: none;
+  line-height: 1.6;
+  font-family: CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl,
+    CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif),
+    sans-serif;
+  direction: inherit;
+  visibility: visible;
+  box-sizing: border-box;
+  touch-action: manipulation;
+  text-decoration: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  user-select: none;
+  background: transparent;
+  color: #b3b3b3;
+  white-space: nowrap;
+  margin-left: 0px;
+  font-weight: 500;
+  font-size: 0.685rem;
+  margin-bottom: 30px;
+}
+
+
+.allPlaylist__title__container > button:hover {
+    color: #b3b3b3;
+    text-decoration: underline;
+  }
+
+.allPlaylist__info {
+  display: flex;
+  margin-left: -35px;
+  justify-content: flex-start;
+}
+
+.allPlaylist__row {
+  display: flex;
+}

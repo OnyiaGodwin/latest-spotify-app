@@ -6,6 +6,7 @@ import { useStateValue } from "../../store/StateProvider";
 
 function Barner() {
   const [{ topArtists }] = useStateValue();
+
   const [morning, setMorning] = useState(false);
   const [afternoon, setAfternoon] = useState(false);
   const [evening, setEvening] = useState(false);
@@ -14,15 +15,15 @@ function Barner() {
 
   useEffect(() => {
     const date = new Date();
-    let hr = date.getHours("en-US", { hours12: false });
-    // console.log("this is hour >>", hr);
-    // hr= 16;
-    
-    if (hr < 12) {
+    let curHour = date.getHours("en-US", { hours12: false });
+    // console.log("this is hour >>", curHour);
+    // curHour = 16;
+
+    if (curHour < 12) {
       setMorning(true);
       setAfternoon(false);
       setEvening(false);
-    } else if (hr >= 12 && hr < 16) {
+    } else if (curHour >= 12 && curHour < 16) {
       setAfternoon(true);
       setMorning(false);
       setEvening(false);
@@ -50,6 +51,7 @@ function Barner() {
         {topArtists?.items?.map((artist) => {
           return (
             <RecentPlayed
+              key={artist?.id}
               id={artist?.id}
               name={artist?.name}
               image={artist?.images[0]?.url}

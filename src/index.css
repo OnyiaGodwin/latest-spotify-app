@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@400;700&display=swap");
 
 body::-webkit-scrollbar {
+  width: 100vw;
   display: none;        /*To hide the scrollbar in the whole app*/
 }
 

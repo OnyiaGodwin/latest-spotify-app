@@ -1,0 +1,10 @@
+.songRow {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.songRow > img {
+    width: 100%;
+    height: 60px;
+}

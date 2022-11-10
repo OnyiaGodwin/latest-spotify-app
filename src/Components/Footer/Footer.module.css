@@ -1,7 +1,7 @@
 .footer {
   position: fixed;
   bottom: 0;
-  height: 65px;
+  height: 90px;
   width: 100%;
   background-color: #282828;
   padding: 20px;
@@ -62,14 +62,14 @@
 .footer__left__pictureIcon {
   margin-left: 10px;
   font-family: CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif),sans-serif;
-  fill: #1db954!important;
-  color: #1db954!important;
+  /* fill: #1db954!important;
+  color: #1db954!important; */
   box-sizing: border-box;
 }
 
-.footer__shulRepIcon {
+/* .footer__shulRepIcon {
   color: #1ed15e;
-}
+} */
 
 .footer__albumLogo {
     height: 60px;
@@ -173,6 +173,12 @@
   justify-content: space-between;
 }
 
-.footer__right * .MuiSlider-root  {
-  color: green;
+.footer__slider  {
+  color: #fff !important;
+  width: 93px;
+  height: 12px;
+}
+
+.footer__slider:active  {
+  color: #1db954 !important;
 }

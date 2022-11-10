@@ -7,7 +7,6 @@ import { useStateValue } from "../../store/StateProvider";
 import HomeIcon from "@mui/icons-material/Home";
 import AddBoxIcon from "@mui/icons-material/AddBox";
 import SearchIcon from "@mui/icons-material/Search";
-//import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import LibraryMusicIcon from "@mui/icons-material/LibraryMusic";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 
