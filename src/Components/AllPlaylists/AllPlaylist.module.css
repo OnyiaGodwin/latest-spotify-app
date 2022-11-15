@@ -140,6 +140,11 @@
   display: flex;
   margin-left: -35px;
   justify-content: flex-start;
+  overflow-x: overlay;
+}
+
+.allPlaylist__info::-webkit-scrollbar {
+  display: none;
 }
 
 .allPlaylist__row {

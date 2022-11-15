@@ -12,6 +12,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 
 function SideBar() {
   const [{ playlists }, ] = useStateValue();
+  // console.log('this is sidebar playlists', playlists)
   
   return (
     <div className={classes.sidebar}>

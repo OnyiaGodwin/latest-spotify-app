@@ -19,7 +19,7 @@ function Player(props) {
           <Body spotify={spotify}/>
         </div>
 
-        <Footer />
+        <Footer spotify={spotify} />
         {/* Footer */}
     </div>
   )
